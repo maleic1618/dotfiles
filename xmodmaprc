@@ -1,0 +1,27 @@
+keycode 101 = Alt_R
+add mod1 = Alt_R
+keycode 102 = Mode_switch
+keycode 100 = Super_R
+add mod4 = Super_R
+
+keycode 10 = 1 exclam F1 exclam
+keycode 11 = 2 quotedbl F2 quotedbl
+keycode 12 = 3 numbersign F3 numbersign
+keycode 13 = 4 dollar F4 dollar
+keycode 14 = 5 percent F5 percent
+keycode 15 = 6 ampersand F6 ampersand
+keycode 16 = 7 apostrophe F7 apostrophe
+keycode 17 = 8 parenleft F8 parenleft
+keycode 18 = 9 parenright F9 parenright
+keycode 19 = 0 asciitilde F10 asciitilde
+keycode 20 = minus equal F11 equal
+keycode 21 = asciicircum asciitilde F12 asciitilde
+
+keycode 38 = a A Caps_Lock
+keycode 39 = s S F14
+keycode 40 = d D F15
+keycode 41 = f F F16
+keycode 44 = j J F17
+keycode 45 = k K F18
+keycode 46 = l L F19
+keycode 47 = semicolon plus F20

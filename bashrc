@@ -5,8 +5,7 @@
 # If not running interactively, don't do anything
 case $- in
     *i*) ;;
-      *) return;;
-esac
+      *) return;; esac
 
 # don't put duplicate lines or lines starting with space in the history.
 # See bash(1) for more options
@@ -112,11 +111,13 @@ if ! shopt -oq posix; then
   fi
 fi
 
+source ~/opt/git-prompt.sh
+
 PS1="\$(
     echo -ne \"\e]0;\$TERM_TITLE\a\"
     bar=\" \[\e[0;31;43m\] \[\e[0m\e[0;37m\] \"
     echo -ne \"\n\"
-    echo -ne \"\${bar}Host: \H | User: \u | Path: \w\n\"
+    echo -ne \"\${bar}Host: \H | User: \u | Path: \w\$(__git_ps1 ' | Branch: %s')\n\" 
     echo -ne \"\${bar}\$ \[\e[0m\]\"
 )"
 
@@ -182,4 +183,13 @@ alias lsla="ls -la"
 alias lsal="ls -la"
 alias lslals="ls -la|less"
 alias lsalls="ls -la|less"
-alias redhcp="sudo dhclient -r && sudo dhclient"
+
+# ghq + peco
+# https://qiita.com/itkrt2y/items/0671d1f48e66f21241e2
+alias g='cd $(ghq root)/$(ghq list | peco)'
+
+export GOPATH='/home/maleic/.go'
+export PATH="$PATH:$GOPATH/bin"
+if [ -f ~/git/hub/etc/hub.bash_completion ]; then
+  . ~/git/hub/etc/hub.bash_completion
+fi
