@@ -1,0 +1,15 @@
+[[dotfile]]
+  dest = "~/.bashrc"
+  src = "bashrc"
+
+[[dotfile]]
+  dest = "~/.tmux.conf"
+  src = "tmux.conf"
+
+[[dotfile]]
+  dest = "~/.vimrc"
+  src = "vimrc"
+
+[[dotfile]]
+  dest = "~/.xmodmaprc"
+  src = "xmodmaprc"
