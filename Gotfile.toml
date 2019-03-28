@@ -1,6 +1,11 @@
+# bash
+# wget -O ~/opt/git-prompt.sh https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh
+
 [[dotfile]]
   dest = "~/.bashrc"
   src = "bashrc"
+
+# tmux
 
 [[dotfile]]
   dest = "~/.tmux.conf"
@@ -13,3 +18,18 @@
 [[dotfile]]
   dest = "~/.xmodmaprc"
   src = "xmodmaprc"
+
+# i3wm
+# git clone https://github.com/westurner/i3t ~/.config/i3/i3t
+
+[[dotfile]]
+  dest = "~/.config/i3/config"
+  src = "i3/config"
+
+[[dotfile]]
+  dest = "~/.config/i3/i3bar-conky-rc"
+  src = "i3/i3bar-conky-rc"
+
+[[dotfile]]
+  dest = "~/.config/i3/run-conky.sh"
+  src = "i3/run-conky.sh"
