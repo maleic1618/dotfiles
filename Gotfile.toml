@@ -33,3 +33,8 @@
 [[dotfile]]
   dest = "~/.config/i3/run-conky.sh"
   src = "i3/run-conky.sh"
+
+
+[[dotfile]]
+  dest = "~/.window-setting.sh"
+  src = "window-setting.sh
