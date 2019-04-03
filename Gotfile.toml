@@ -38,3 +38,7 @@
 [[dotfile]]
   dest = "~/.window-setting.sh"
   src = "window-setting.sh
+
+[[dotfile]]
+  dest = "~/.Xresources"
+  src = "Xresources"
